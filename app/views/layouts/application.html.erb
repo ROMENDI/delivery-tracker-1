@@ -11,6 +11,15 @@
   </head>
 
   <body>
+  <nav>
+    <% if current_user != nil %>
+      <a href="/users/sign_out"></a>
+      <a href="/users/edit"></a>
+    <% else %>
+      <a href="/users/sign_up"></a>
+      <a href="/users/sign_in"></a>
+    <% end %>
+  </nav>
     <%= yield %>
   </body>
 </html>
