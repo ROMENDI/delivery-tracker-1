@@ -52,6 +52,7 @@
 </div>
 
 <hr>
+
 <div class="waiting_on" style = "background-color: lightgoldenrodyellow" >
   <h2>Waiting on</h2>
   <ul>
@@ -83,12 +84,13 @@
     <% end %>
   </ul>
   <hr>
-  
-  <div class="received" style = "background-color: lightgreen" >
-    <h2>Received</h2>
+</div>
 
-    <ul>
-      <% @received_deliveries.each do |received_delivery|%>
+<div class="received" style = "background-color: lightgreen" >
+  <h2>Received</h2>
+
+  <ul>
+    <% @received_deliveries.each do |received_delivery|%>
       <li>
         <div><%= received_delivery.description %></div>
         <div>
@@ -98,5 +100,6 @@
           </small>
         </div>
       </li>
-      <% end %>
-    </ul>
+    <% end %>
+  </ul>
+</div>
